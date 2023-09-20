@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cvfb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0049-tenant/ci10t-777-0049-app/devfile-sample-cvfb@sha256:a6c885d938fa661ccdf984d3c3416ad5416c76bb3730444d854868197959f39b
+        name: my-nodejs
+        resources: {}
+status: {}
